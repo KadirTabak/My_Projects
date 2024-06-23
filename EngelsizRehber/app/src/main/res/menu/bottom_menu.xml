@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/events"
+        android:title="Etkinlikler"
+        android:icon="@drawable/article_icon" />
+
+    <item
+        android:id="@+id/news"
+        android:title="Haberler"
+        android:icon="@drawable/news_icon" />
+
+    <item
+        android:id="@+id/forum"
+        android:title="Forum"
+        android:icon="@drawable/forum_icon"/>
+
+    <item
+        android:id="@+id/read"
+        android:title="Oku"
+        android:icon="@drawable/read_icon"/>
+
+    <item
+        android:id="@+id/where"
+        android:title="Neredeyim"
+        android:icon="@drawable/where_icon"/>
+
+</menu>

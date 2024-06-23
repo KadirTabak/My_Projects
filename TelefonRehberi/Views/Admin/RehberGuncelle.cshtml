@@ -1,0 +1,24 @@
+@model Rehber
+<!-- Icerik -->
+<div class="container mt-4">
+    <div class="mb-3">
+
+        <h2>Kayıt Güncelle</h2>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="KullaniciAdi"></label>
+                <input asp-for="KullaniciAdi" class="form-control">
+                <span asp-validation-for="KullaniciAdi" class="text-danger"></span>
+            </div>
+            <<div class="mb-3">
+                <label asp-for="Telefon"></label>
+                <input asp-for="Telefon" class="form-control">
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Tamam</button>
+
+        </form>
+
+    </div>
+</div>

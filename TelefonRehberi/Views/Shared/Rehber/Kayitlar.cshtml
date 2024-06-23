@@ -1,0 +1,22 @@
+@model List<Rehber>
+
+<h2>Kayıtlar</h2>
+
+<!-- Urun Listesi -->
+<div class="row row-cols-2 row-cols-lg-3 g-3">
+
+    @foreach (var item in Model)
+    {       
+        <!-- Rehber -->
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="~/image/urun.png" alt="..." />
+                <div class="card-body text-center">
+                    <h5 class="card-title">@item.KullaniciAdi</h5>
+                    <p class="card-text small">@item.Telefon </p>
+                    <a class="btn btn-outline-primary btn-sm" asp-controller="Rehber" asp-action="Detay" asp-route-id="@item.Id">Detay</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

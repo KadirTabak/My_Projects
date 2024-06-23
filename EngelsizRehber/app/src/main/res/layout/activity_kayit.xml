@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    style="@style/Screen"
+    tools:context=".KayitActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_editext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kayıt"
+                android:id="@+id/SingUpTextView"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                style="@style/Text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/nameEditText"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/account_icon"
+                android:drawablePadding="8dp"
+                android:inputType="textPersonName"
+                android:hint="Ad Soyad"
+                android:padding="5dp"
+                style="@style/Text"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/mailEditText"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/mail_icon"
+                android:drawablePadding="8dp"
+                android:inputType="textEmailAddress"
+                android:hint="E-Posta"
+                android:padding="5dp"
+                style="@style/Text"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="25dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/passwordEditText"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/lock_icon"
+                android:drawablePadding="8dp"
+                android:hint="Parola"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                style="@style/Text"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/passwordTekrarEditText"
+                android:background="@drawable/custom_editext"
+                android:drawableLeft="@drawable/lock_icon"
+                android:drawablePadding="8dp"
+                android:hint="Parola Tekrar"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                style="@style/Text"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="30dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_text"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_editext" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/blue"
+                android:onClick="kayit"
+                android:text="Kayıt Ol"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:minHeight="48dp"
+        android:onClick="goToGiris"
+        android:padding="5dp"
+        android:text="Zaten Hesabım Var"
+        android:textAlignment="center"
+        style="@style/Text"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrivateActivity"
+    android:padding="5dp"
+    style="@style/Screen">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Gizlilik Politikamız"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_editext"
+        android:backgroundTint="@color/white"
+        android:text="Bizim için gizlilik, en üst düzeyde önemlidir. Bu gizlilik politikası, Engelsiz Rehber'in üyelerinin ve ziyaretçilerinin gizliliğini korumak için nasıl bilgi topladığımızı, kullandığımızı,koruduğumuzu ve açıkladığımızı açıklar. Grubumuz, üyelerimizin ve ziyaretçilerimizin kişisel bilgilerini toplarken ve kullanırken şeffaf olmayı taahhüt eder. Kişisel bilgilerinizi, sizinle iletişim kurmak, etkinliklerimizi duyurmak, geri bildirim toplamak ve size daha iyi hizmet sunmak amacıyla toplarız. Bu bilgiler adsoyad, e-posta,parola ve engel türünü içerir. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/custom_editext"
+        android:backgroundTint="@color/white"
+        android:text="Engelsiz Rehber v1.0"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

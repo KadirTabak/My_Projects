@@ -1,0 +1,28 @@
+@model List<Rehber>
+<div class="container mt-4">
+    <div class="mb-3">
+        <h2>Kayıtlar</h2>
+
+        <a asp-action="RehberEkle" class="btn btn-primary mb-3">Ekle</a>
+        <!-- Rehber Listesi -->
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Kullanıcı Adı</th>
+                    <th>Telefon Numarası</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.KullaniciAdi</td>
+                    <td>@item.Telefon</td>
+                    <td>
+                        <a asp-action="RehberGuncelle" class="btn btn-outline-primary" asp-route-id="@item.Id">Güncelle</a>
+                        <a asp-action="RehberSil" class="btn btn-outline-primary" asp-route-id="@item.Id">Sil</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

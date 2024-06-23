@@ -1,0 +1,9 @@
+@model ArabaModel
+
+<form method="post" asp-action="Duzenle">
+    <p> <input type="text" name="Marka" placeholder="Marka Gir" value="@Model.Marka"> </p>
+    <p> <input type="text" name="Model" placeholder="Model Gir" value="@Model.Model"> </p>
+    <p> <input type="text" name="Yil" placeholder="Yıl Gir" value="@Model.Yil"> </p>
+    <p> <input type="text" name="Yakit" placeholder="Yakıt Gir" value="@Model.Yakit"> </p>
+    <p> <button type="submit" class="btn btn-success">Güncelle</button> </p>
+</form>
